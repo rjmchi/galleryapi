@@ -1,0 +1,52 @@
+get http://localhost:3000/api/albums
+
+###
+get http://localhost:3000/api/albums/2
+
+###
+get http://localhost:3000/api/albums?title=vallarta
+
+###
+
+post http://localhost:3000/api/albums
+Content-Type: application/json
+
+{"title":"Puerto Vallarta"}
+
+###
+
+put http://localhost:3000/api/albums/1
+Content-Type: application/json
+
+{"title":"2001 - Puerto Vallarta"}
+
+###
+
+get http://localhost:3000/api/images
+###
+
+get http://localhost:3000/api/images?caption=vallarta
+
+###
+get http://localhost:3000/api/images?description=palmares
+###
+get http://localhost:3000/api/images?description=palmares&caption=cap
+
+
+###
+post http://localhost:3000/api/images 
+Content-Type: application/json
+
+{"filename":"asdfqwee.jpg",
+"caption": "puerto vallarta",
+"description":"los palmares",
+"album_id":1}
+
+###
+
+put http://localhost:3000/api/images/4
+Content-Type: application/json
+
+{"caption": "Puerto Vallarta 2020",
+"description":"los palmares 802"}
+

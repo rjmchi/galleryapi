@@ -1,0 +1,10 @@
+*.log
+
+/.htaccess
+
+.project
+node_modules/
+build/
+vendor/
+.buildpath
+Thumbs.db
